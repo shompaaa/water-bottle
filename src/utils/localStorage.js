@@ -16,15 +16,15 @@ const getCartFromLocalStorage = () => {
 
 const saveCartToLocalStorage = (cart) => {
   const cartStringified = JSON.stringify(cart);
-  localStorage.setItem("cart", cartStringified);
+  localStorage.setItem('cart', cartStringified);
 };
 
 const addItemToCartLocalStorage = (id) => {
   const cart = getCartFromLocalStorage();
-  cart.push(id);
+  const newCart = [...cart, id];
 
   //Save cart to the local storage
-  saveCartToLocalStorage(cart);
+  saveCartToLocalStorage(newCart);
 };
 
 export {
