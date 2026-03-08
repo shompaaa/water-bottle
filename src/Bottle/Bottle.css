@@ -1,10 +1,11 @@
 .bottle{
     border: 2px solid red;
     border-radius: 15px;
-    padding: 20px 0;
+    padding: 15px;
 }
 
 .bottle img{
-    width: 250px;
-    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
 }
