@@ -1,0 +1,13 @@
+.bottles-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+
+
+@media screen and  (min-width: 480px) and (max-width: 768px) {
+    .bottles-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}
